@@ -4,6 +4,7 @@ import About from "./About";
 import Services from "./Services";
 import MobileApp from "./MobileApp";
 import Agents from "./Agents";
+import Cooperation from "./Cooperate";
 
 const Content = () => {
   return (
@@ -13,6 +14,7 @@ const Content = () => {
       <Services />
       <MobileApp />
       <Agents />
+      <Cooperation />
     </>
   );
 };

@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Divider from "../../components/Divider";
 import Button from "../../components/Buttons";
 
-const Agents = ({ id }) => {
+const Agents = ({ id, ...props }) => {
   return (
     <section id={id} className={mobileStyle.agentRoot}>
       <h2 className={mobileStyle.agentCap}>
