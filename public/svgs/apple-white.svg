@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="56" viewBox="0 0 180 56">
+  <g id="Group_25" data-name="Group 25" transform="translate(-100 -495)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="180" height="56" rx="4" transform="translate(100 495)" fill="#fff"/>
+    <g id="Group_4" data-name="Group 4" transform="translate(1.474 2)">
+      <g id="Group_2" data-name="Group 2">
+        <text id="Download_on_the" data-name="Download on the" transform="translate(206 513)" fill="#1d2c7e" font-size="12" font-family="Rubik-Light, Rubik" font-weight="300"><tspan x="-45.81" y="0">Download on the</tspan></text>
+        <text id="App_Store" data-name="App Store" transform="translate(210 536)" fill="#1d2c7e" font-size="20" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-49.76" y="0">App Store</tspan></text>
+      </g>
+      <path id="apple" d="M26.546,20.724a8.826,8.826,0,0,1,4.21-7.426,9.1,9.1,0,0,0-7.132-3.865c-3.036-.308-5.927,1.788-7.469,1.788s-3.916-1.743-6.436-1.7a9.538,9.538,0,0,0-8.064,4.887c-3.44,5.967-.881,14.811,2.471,19.652C5.765,36.433,7.719,39.095,10.283,39c2.469-.1,3.4-1.6,6.389-1.6s3.826,1.6,6.439,1.55c2.658-.051,4.341-2.416,5.967-4.792a21.566,21.566,0,0,0,2.7-5.548,8.61,8.61,0,0,1-5.234-7.888Zm-4.911-14.5A8.593,8.593,0,0,0,23.663,0,8.734,8.734,0,0,0,17.92,2.954a8.176,8.176,0,0,0-2.071,6.034,7.232,7.232,0,0,0,5.786-2.759Z" transform="translate(117.504 502)" fill="#1d2c7e"/>
+    </g>
+  </g>
+</svg>

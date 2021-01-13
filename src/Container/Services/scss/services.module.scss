@@ -1,0 +1,56 @@
+.root {
+  padding: 3% 6%;
+}
+.aboutContent {
+  display: flex;
+  justify-content: space-between;
+}
+.serviceCaption {
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  width: 560px;
+  color: #000;
+}
+.desc {
+  width: 585px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 1% 0;
+}
+.icons {
+  padding: 4% 10%;
+
+  .mt {
+    margin-top: 7%;
+  }
+
+  & p {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .serviceCaption,
+  .desc {
+    width: 100%;
+  }
+  .serviceCaption {
+    margin-top: 5%;
+  }
+  .icons {
+    padding: 0;
+    margin-top: 8%;
+
+    img {
+      margin-left: 40%;
+      margin-bottom: 4%;
+    }
+    h2,
+    p {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

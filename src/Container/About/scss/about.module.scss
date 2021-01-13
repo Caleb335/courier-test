@@ -1,0 +1,77 @@
+@import "../../../../styles/variables";
+
+.root {
+  padding: 0 6%;
+  margin-top: -8%;
+}
+.aboutContent {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutCaption {
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  width: 480px;
+  color: #000;
+}
+.aboutDesc {
+  width: 585px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 3% 0;
+}
+.aboutImg {
+  margin-left: 10%;
+}
+.delivery {
+  margin-top: 4%;
+
+  & .delInfo {
+    margin-top: 8%;
+  }
+}
+.abtDelivery {
+  width: 488px;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 3% 0;
+  font-weight: 200;
+}
+.scooter {
+  border-bottom: 2px solid rgb(245, 134, 155);
+  width: 600px;
+  padding-bottom: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutContent {
+    margin-top: 5%;
+  }
+  .aboutCaption,
+  .aboutDesc,
+  .delivery,
+  .abtDelivery {
+    width: 100%;
+  }
+  .aboutCaption {
+    line-height: 45px;
+  }
+  .aboutDesc,
+  .abtDelivery {
+    font-size: 14px;
+  }
+  .aboutImg {
+    width: 100%;
+    margin: 0;
+  }
+  .scooter {
+    border-bottom: none;
+  }
+  .delivery {
+    border-bottom: 2px solid rgb(245, 134, 155);
+    width: 600px;
+    padding-bottom: 3%;
+  }
+}
