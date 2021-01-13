@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="56" viewBox="0 0 180 56">
+  <g id="Group_26" data-name="Group 26" transform="translate(-296 -495)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="180" height="56" rx="4" transform="translate(296 495)" fill="#fff"/>
+    <g id="Group_6" data-name="Group 6" transform="translate(-0.035 2)">
+      <g id="Group_3" data-name="Group 3" transform="translate(191)">
+        <text id="GET_IT_ON" data-name="GET IT ON" transform="translate(160 513)" fill="#1d2c7e" font-size="12" font-family="Rubik-Light, Rubik" font-weight="300"><tspan x="0" y="0">GET IT ON</tspan></text>
+        <text id="Google_Play" data-name="Google Play" transform="translate(160 536)" fill="#1d2c7e" font-size="20" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="0" y="0">Google Play</tspan></text>
+      </g>
+      <g id="logo-google-playstore" transform="translate(258.035 470.003)">
+        <path id="Path_1" data-name="Path 1" d="M48,55.549V89.761a.377.377,0,0,0,.642.267L66.455,72.656,48.642,55.282a.377.377,0,0,0-.642.267Z" transform="translate(0 -21.159)" fill="#1d2c7e"/>
+        <path id="Path_2" data-name="Path 2" d="M105.593,44.359,83.257,32.053l-.014-.008a.381.381,0,0,0-.435.615L100.316,49.4Z" transform="translate(-31.668 0)" fill="#1d2c7e"/>
+        <path id="Path_3" data-name="Path 3" d="M82.817,296.794a.38.38,0,0,0,.435.615l.014-.008L105.6,285.095l-5.276-5.045Z" transform="translate(-31.676 -226.459)" fill="#1d2c7e"/>
+        <path id="Path_4" data-name="Path 4" d="M322.462,194.975l-6.237-3.435-5.865,5.611,5.865,5.609,6.237-3.432A2.5,2.5,0,0,0,322.462,194.975Z" transform="translate(-239.521 -145.654)" fill="#1d2c7e"/>
+      </g>
+    </g>
+  </g>
+</svg>
