@@ -1,6 +1,7 @@
 import React from "react";
 import serviceStyle from "./scss/services.module.scss";
 import Grid from "@material-ui/core/Grid";
+import Divider from "../../components/Divider";
 
 const Services = ({ id }) => {
   return (
@@ -65,6 +66,7 @@ const Services = ({ id }) => {
             </p>
           </Grid>
         </Grid>
+        <Divider />
       </Grid>
     </section>
   );

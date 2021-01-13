@@ -1,0 +1,93 @@
+@import "../../../../styles/variables";
+
+.root {
+  padding: 3% 6%;
+  margin-bottom: 7%;
+
+  & h2 {
+    padding-bottom: 11%;
+    margin-top: -4%;
+  }
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.mobCaption {
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 900;
+  width: 485px;
+  color: #000;
+}
+.mobApp {
+  padding: 0 10%;
+}
+.heroDesc {
+  width: 485px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 3% 0;
+}
+.btnGrid {
+  display: flex;
+  width: 570px;
+  margin-top: 3%;
+
+  & img {
+    padding: 0 12px 12px 0;
+  }
+}
+
+// agent section
+.agentRoot {
+  margin-top: -7%;
+  padding: 0 6%;
+  margin-bottom: 4%;
+}
+.agentCap {
+  width: 480px;
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #000;
+}
+.mobImg {
+  margin-top: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+  .root h2 {
+    width: 100%;
+  }
+  .content {
+    margin-bottom: 7%;
+  }
+  .agentCap,
+  .heroDesc {
+    width: 100%;
+  }
+  .mobApp {
+    padding: 0;
+    width: 100%;
+
+    & h2,
+    p {
+      width: 100%;
+    }
+  }
+  .btnGrid {
+    width: 100%;
+
+    img {
+      width: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .mobImg {
+    width: 100%;
+  }
+}

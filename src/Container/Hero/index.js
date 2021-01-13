@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import heroStyle from "./scss/hero.module.scss";
+import Divider from "../../components/Divider";
 
 const Hero = ({ id }) => {
   return (
@@ -59,6 +60,7 @@ const Hero = ({ id }) => {
           />
         </div>
       </div>
+      <Divider />
     </section>
   );
 };

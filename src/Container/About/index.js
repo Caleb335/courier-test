@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import aboutStyle from "./scss/about.module.scss";
+import Divider from "../../components/Divider";
 
 const About = ({ id }) => {
   return (
@@ -44,6 +45,7 @@ const About = ({ id }) => {
           </Grid>
         </Grid>
       </Grid>
+      <Divider />
     </section>
   );
 };
