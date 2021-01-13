@@ -3,9 +3,9 @@ import mobileStyle from "./scss/mob.module.scss";
 import Grid from "@material-ui/core/Grid";
 import Divider from "../../components/Divider";
 
-const MobileApp = ({ id }) => {
+const MobileApp = ({ id, ...props }) => {
   return (
-    <section id={id} className={mobileStyle.root}>
+    <section id={id} className={mobileStyle.root} {...props}>
       <h2 className={mobileStyle.mobCaption}>
         A mobile app tailored to all your shipment needs.
       </h2>

@@ -6,7 +6,7 @@ import Button from "../../components/Buttons";
 
 const Agents = ({ id, ...props }) => {
   return (
-    <section id={id} className={mobileStyle.agentRoot}>
+    <section id={id} className={mobileStyle.agentRoot} {...props}>
       <h2 className={mobileStyle.agentCap}>
         Join the Exalt network of agents and earn good income.{" "}
       </h2>

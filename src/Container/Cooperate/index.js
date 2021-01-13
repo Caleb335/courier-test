@@ -6,7 +6,7 @@ import Button from "../../components/Buttons";
 
 const Cooperation = ({ id, ...props }) => {
   return (
-    <section id={id} className={coopStyle.coopRoot}>
+    <section id={id} className={coopStyle.coopRoot} {...props}>
       <h2 className={coopStyle.agentCap}>
         Need quality shipment for your cooperation? Look no further.{" "}
       </h2>
