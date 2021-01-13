@@ -1,0 +1,89 @@
+@import "../../../../styles/variables";
+
+.root {
+  padding: 12% 6%;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.heroCaption {
+  line-height: 65px;
+  font-size: 42px;
+  font-weight: 900;
+  width: 585px;
+}
+.heroDesc {
+  width: 585px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 3% 0;
+}
+.heroImg {
+  margin-top: -20%;
+}
+.btnGrid {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+  margin-top: 3%;
+}
+
+// partners section
+.partners {
+  margin-top: 3%;
+  & p {
+    font-size: 16px;
+    color: $grey;
+    font-weight: 600;
+  }
+}
+.partnersGrid {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  padding: 5% 0;
+
+  & .exaltEcomm {
+    width: 100px;
+    height: 32px;
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heroCaption,
+  .heroDesc {
+    width: 100%;
+  }
+  .heroCaption {
+    line-height: 45px;
+  }
+  .heroDesc {
+    font-size: 14px;
+  }
+  .heroImg {
+    margin-top: 10%;
+    width: 100%;
+  }
+  .btnGrid {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+    & img {
+      margin-top: 4%;
+    }
+  }
+  // partners grid
+  .partners {
+    margin-top: 8%;
+  }
+  .partnersGrid {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -3%;
+    width: 100%;
+  }
+}

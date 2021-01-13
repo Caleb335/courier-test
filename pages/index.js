@@ -1,9 +1,10 @@
 import Layout from "../src/Layout";
+import Content from "../src/Container";
 
 export default function Home() {
   return (
     <Layout>
-      <h4>Children</h4>
+      <Content />
     </Layout>
   );
 }
