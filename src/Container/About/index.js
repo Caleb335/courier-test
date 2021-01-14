@@ -3,9 +3,9 @@ import Grid from "@material-ui/core/Grid";
 import aboutStyle from "./scss/about.module.scss";
 import Divider from "../../components/Divider";
 
-const About = ({ id }) => {
+const About = ({ id, ...props }) => {
   return (
-    <section id={id} className={aboutStyle.root}>
+    <section id={id} className={aboutStyle.root} {...props}>
       <Grid container className={aboutStyle.aboutContent}>
         <Grid item xs={12} lg={6}>
           <h2 className={aboutStyle.aboutCaption}>

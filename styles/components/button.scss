@@ -27,6 +27,18 @@
     cursor: pointer;
   }
 }
+.btn-outline-light {
+  background: none;
+  color: $white;
+  text-align: center;
+  border: 1px solid $white;
+  &:hover {
+    cursor: pointer;
+    background: $white;
+    color: $primary;
+    transition: all 0.4s ease-in;
+  }
+}
 .btn-md {
   width: 220px;
   height: 40px;

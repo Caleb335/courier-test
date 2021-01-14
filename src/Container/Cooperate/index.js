@@ -34,6 +34,7 @@ const Cooperation = ({ id, ...props }) => {
           />
         </Grid>
       </Grid>
+      <Divider />
     </section>
   );
 };

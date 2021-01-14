@@ -3,9 +3,9 @@ import Grid from "@material-ui/core/Grid";
 import heroStyle from "./scss/hero.module.scss";
 import Divider from "../../components/Divider";
 
-const Hero = ({ id }) => {
+const Hero = ({ id, ...props }) => {
   return (
-    <section id={id} className={heroStyle.root}>
+    <section id={id} className={heroStyle.root} {...props}>
       <Grid container className={heroStyle.content}>
         <Grid item xs={12} lg={5} md={4}>
           <h1 className={heroStyle.heroCaption}>

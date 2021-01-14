@@ -65,9 +65,65 @@
 .org {
   padding: 8% 6%;
 }
-// #cooperate {
-//   margin-left: -26%;
-// }
+// coperate section ends here
+
+// testimonies section starts here
+.content {
+  padding: 4% 7%;
+
+  & img {
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+}
+.desc {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 3% 0;
+}
+.personnel {
+  background: $primary;
+  margin: 5% 0;
+  width: 100%;
+  height: 246px;
+  margin-bottom: 5%;
+  padding: 3% 12%;
+
+  & .container {
+    height: 0;
+    display: flex;
+    justify-content: space-around;
+
+    h2 {
+      margin-bottom: 8%;
+    }
+    button {
+      border-radius: 0;
+    }
+    .info,
+    h2,
+    img {
+      background: none;
+      color: $white;
+    }
+
+    img {
+      margin-top: -19%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      width: 100%;
+      margin-top: 20%;
+    }
+    h2 {
+      font-size: 20px;
+      width: 100%;
+    }
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .root h2 {

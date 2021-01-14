@@ -3,9 +3,9 @@ import serviceStyle from "./scss/services.module.scss";
 import Grid from "@material-ui/core/Grid";
 import Divider from "../../components/Divider";
 
-const Services = ({ id }) => {
+const Services = ({ id, ...props }) => {
   return (
-    <section id={id} className={serviceStyle.root}>
+    <section id={id} className={serviceStyle.root} {...props}>
       <Grid container>
         <Grid item xs={12}>
           <h2 className={serviceStyle.serviceCaption}>
