@@ -1,0 +1,35 @@
+@import "../variables";
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+}
+.form-control {
+  width: 375px;
+  height: 42px;
+  border-radius: 4px;
+  outline: $primary;
+  border: none;
+  background: $white;
+  padding: 3% 4%;
+
+  &:focus {
+    border: 1px solid $primary;
+  }
+}
+.text-control {
+  width: 375px;
+  border-radius: 4px;
+  outline: $primary;
+  border: none;
+  background: $white;
+  padding: 3% 4%;
+
+  &:focus {
+    border: 1px solid $primary;
+  }
+}
+.btn-md {
+  width: 180px;
+}

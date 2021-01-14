@@ -1,0 +1,45 @@
+.root {
+  padding: 3% 10%;
+  margin-bottom: 7%;
+
+  & h2 {
+    padding-bottom: 11%;
+    margin-top: -4%;
+  }
+  button {
+    margin: 4% 0;
+  }
+}
+
+.contactCap {
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 900;
+  width: 485px;
+  color: #000;
+}
+.desc {
+  width: 450px;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: -10%;
+}
+.address {
+  margin-top: 45%;
+  width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .root {
+    padding: 8% 6%;
+    & h2,
+    p {
+      width: 100%;
+    }
+
+    form {
+      margin-top: 5%;
+    }
+  }
+}

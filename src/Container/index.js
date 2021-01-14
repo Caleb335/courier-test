@@ -6,6 +6,7 @@ import MobileApp from "./MobileApp";
 import Agents from "./Agents";
 import Cooperation from "./Cooperate";
 import Testimonies, { Personnel } from "./People";
+import Contact from "./Contact";
 
 const Content = () => {
   return (
@@ -18,6 +19,7 @@ const Content = () => {
       <Cooperation />
       <Testimonies />
       <Personnel />
+      <Contact />
     </>
   );
 };
