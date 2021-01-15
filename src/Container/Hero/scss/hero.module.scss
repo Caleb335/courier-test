@@ -1,7 +1,7 @@
 @import "../../../../styles/variables";
 
 .root {
-  padding: 12% 6%;
+  padding: 16% 6%;
 }
 .content {
   display: flex;
@@ -61,6 +61,7 @@
   }
   .heroCaption {
     line-height: 45px;
+    padding-top: 20%;
   }
   .heroDesc {
     font-size: 14px;

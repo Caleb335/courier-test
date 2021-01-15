@@ -5,6 +5,16 @@ import Button from "../../components/Buttons";
 import Input, { Textarea } from "../../components/Inputs";
 
 const Contact = ({ id, ...props }) => {
+  const [input, setInput] = React.useState({
+    fullname: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setInput(e.target.value);
+  };
+
   return (
     <section id={id} {...props} className={contactStyle.root}>
       <h2 className={contactStyle.contactCap}>Get in touch with us.</h2>
@@ -17,18 +27,32 @@ const Contact = ({ id, ...props }) => {
           <form>
             <div className="form-group">
               <label htmlFor="full name">Full Name</label>
-              <Input type="text" name="fullname" className={`form-control`} />
+              <Input
+                type="text"
+                value={input.fullname}
+                name="fullname"
+                className={`form-control`}
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
-              <label htmlFor="full name">Full Name</label>
-              <Input type="text" name="fullname" className={`form-control`} />
+              <label htmlFor="email">Email address</label>
+              <Input
+                type="email"
+                name="email"
+                value={input.email}
+                className={`form-control`}
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
               <label htmlFor="full name">Full Name</label>
               <Textarea
                 name="message"
+                defaultValue={input.message}
                 className={`text-control`}
                 rows="10"
+                onChange={handleChange}
               ></Textarea>
             </div>
             <Button className="btn-md btn-primary" type="submit">
@@ -36,26 +60,34 @@ const Contact = ({ id, ...props }) => {
             </Button>
           </form>
         </Grid>
-        {/* <Grid item xs={12} lg={5} md={4}>
+        <Grid item xs={12} lg={5} md={4}>
           <div className={contactStyle.address}>
-            <p className={contactStyle.desc}>Lagos Nigeria Office</p>
-            <p className={contactStyle.desc}>
-              The Waterside, 5, Admiralty way, Lekki phase 1, Lagos.
-            </p>
-            <p className={contactStyle.desc}>Lagos Nigeria Office</p>
-            <p className={contactStyle.desc}>
-              The Waterside, 5, Admiralty way, Lekki phase 1, Lagos.
-            </p>
-            <p className={contactStyle.desc}>Lagos Nigeria Office</p>
-            <p className={contactStyle.desc}>
-              The Waterside, 5, Admiralty way, Lekki phase 1, Lagos.
-            </p>
-            <p className={contactStyle.desc}>Lagos Nigeria Office</p>
-            <p className={contactStyle.desc}>
-              The Waterside, 5, Admiralty way, Lekki phase 1, Lagos.
-            </p>
+            <div className={contactStyle.lagos}>
+              <p>Lagos Nigeria Office</p>
+              <p>The Waterside, 5, Admiralty way, Lekki phase 1, Lagos.</p>
+              <div className={contactStyle.numbers}>
+                <p style={{ color: "red" }}>
+                  P: <span>+234 1280 9113</span>
+                </p>
+                <p style={{ color: "red" }}>
+                  E: <span>admin@exaltapp.com</span>
+                </p>
+              </div>
+            </div>
+            <div className={contactStyle.lagos}>
+              <div className={contactStyle.numbers2}>
+                <p style={{ color: "red" }}>
+                  P: <span>+234 1280 9113</span>
+                </p>
+                <p style={{ color: "red" }}>
+                  E: <span>admin@exaltapp.com</span>
+                </p>
+              </div>
+              <p>Lagos Nigeria Office</p>
+              <p>The Waterside, 5, Admiralty way, Lekki phase 1, Lagos.</p>
+            </div>
           </div>
-        </Grid> */}
+        </Grid>
       </Grid>
     </section>
   );

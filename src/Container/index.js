@@ -12,14 +12,14 @@ const Content = () => {
   return (
     <>
       <Hero />
-      <About />
-      <Services />
-      <MobileApp />
-      <Agents />
-      <Cooperation />
-      <Testimonies />
+      <About id="about" />
+      <Services id="services" />
+      <MobileApp id="app" />
+      <Agents id="agent" />
+      <Cooperation id="cooperate" />
+      <Testimonies id="testimonials" />
       <Personnel />
-      <Contact />
+      <Contact id="contact" />
     </>
   );
 };

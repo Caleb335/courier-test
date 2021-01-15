@@ -1,5 +1,5 @@
 .root {
-  padding: 3% 10%;
+  padding: 3% 17%;
   margin-bottom: 7%;
 
   & h2 {
@@ -26,8 +26,25 @@
   margin-top: -10%;
 }
 .address {
-  margin-top: 45%;
+  margin-top: 5%;
   width: 500px;
+
+  .lagos {
+    height: 120px;
+    & span {
+      color: #000;
+    }
+    .numbers {
+      padding: 6% 0;
+    }
+    .numbers2 {
+      padding: 4% 0;
+    }
+  }
+}
+.content {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
@@ -41,5 +58,8 @@
     form {
       margin-top: 5%;
     }
+  }
+  .address {
+    width: 100%;
   }
 }
