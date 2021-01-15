@@ -52,6 +52,7 @@ const Contact = ({ id, ...props }) => {
                 defaultValue={input.message}
                 className={`text-control`}
                 rows="10"
+                cols="20"
                 onChange={handleChange}
               ></Textarea>
             </div>

@@ -56,11 +56,11 @@ export const Personnel = () => {
             alt="delivery personnel on white shirt and cap"
           />
         </Grid>
-        <Grid item xs={6} lg={5} md={5} className={peopleStyle.info}>
+        <Grid item xs={12} lg={5} md={5} className={peopleStyle.info}>
           <h2 className={peopleStyle.agentCap}>
             Intrested in becoming a delivery personnel?
           </h2>
-          <Button className="btn btn-outline-light">Register Now</Button>
+          <Button className={`btn btn-outline-light`}>Register Now</Button>
         </Grid>
       </Grid>
     </section>

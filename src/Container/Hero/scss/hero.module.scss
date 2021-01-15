@@ -55,6 +55,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .root {
+    padding: 18% 6%;
+  }
   .heroCaption,
   .heroDesc {
     width: 100%;

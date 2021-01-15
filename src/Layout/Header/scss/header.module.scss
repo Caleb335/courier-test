@@ -42,19 +42,19 @@
   transition: all 0.3s ease-in-out;
   width: 100vw;
   height: 100vh;
+  position: fixed;
+  z-index: 3;
   top: 0;
   bottom: 0;
-  & ul li {
-    list-style-type: none;
-    display: none;
-  }
 }
 .show {
-  transform: translateX(0%);
-  transition: all 0.3s ease-in-out;
   width: 100vw;
   position: fixed;
   z-index: 3;
+  transform: translateX(0%);
+  transition: all 0.3s ease-in-out;
+  top: 0;
+  bottom: 0;
 
   nav {
     padding: 10%;
@@ -62,14 +62,19 @@
     height: 100vh;
     background: $primary;
     animation: semiNav 0.3s ease-in forwards;
-
+    border-top-left-radius: 70%;
     ul {
-      border-bottom-left-radius: 100%;
-      border-top-left-radius: 100%;
+      width: 100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $primary;
     }
     ul li {
       background: $primary;
-      padding: 5% 0;
+      padding: 10% 0;
       font-size: 18px;
       list-style: none;
       color: $white;
@@ -79,7 +84,7 @@
       }
     }
     button {
-      margin-top: 3%;
+      margin-top: 5%;
       width: 100%;
       background: $white;
       color: $primary;
@@ -107,8 +112,8 @@
 
 @keyframes semiNav {
   0% {
-    border-bottom-left-radius: 100%;
-    border-top-left-radius: 100%;
+    border-bottom-left-radius: 80%;
+    border-top-left-radius: 80%;
   }
   20% {
     border-bottom-left-radius: 70%;
@@ -118,7 +123,7 @@
     border-bottom-left-radius: 60%;
     border-top-left-radius: 60%;
   }
-  45% {
+  40% {
     border-bottom-left-radius: 50%;
     border-top-left-radius: 50%;
   }

@@ -18,12 +18,18 @@ const Header = () => {
 
   const toggleMenu = () => {
     setOpen(!false);
+    console.log("opened");
   };
 
   const mobileNav = (
     <header className={`${open ? headStyle.show : headStyle.hide}`}>
       <nav>
-        <div className={headStyle.close} onClick={() => toggleMenu()}>
+        <div
+          className={headStyle.close}
+          onClick={() => {
+            setOpen(false), console.log("closed");
+          }}
+        >
           X
         </div>
         <ul>
@@ -42,31 +48,34 @@ const Header = () => {
 
   return (
     <>
-      {mobileNav}
-      <header className={headStyle.root}>
-        <img
-          src="/svgs/Logo.svg"
-          alt="exalt courier services logo"
-          className="courier-logo"
-        />
-        <nav>
-          <ul>
-            {navLinks.map((item, index) => {
-              return (
-                <li key={index}>
-                  <a href={item.path}>{item.text}</a>
-                </li>
-              );
-            })}
-          </ul>
-          <Button className="btn-primary">Login</Button>
-        </nav>
-        <BiMenuAltRight
-          onClick={() => {
-            toggleMenu();
-          }}
-        />
-      </header>
+      {open ? (
+        mobileNav
+      ) : (
+        <header className={headStyle.root}>
+          <img
+            src="/svgs/Logo.svg"
+            alt="exalt courier services logo"
+            className="courier-logo"
+          />
+          <nav>
+            <ul>
+              {navLinks.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a href={item.path}>{item.text}</a>
+                  </li>
+                );
+              })}
+            </ul>
+            <Button className="btn-primary">Login</Button>
+          </nav>
+          <BiMenuAltRight
+            onClick={() => {
+              toggleMenu();
+            }}
+          />
+        </header>
+      )}
     </>
   );
 };
